@@ -1,0 +1,58 @@
+syntax = "proto3";
+
+package edna.player_journal;
+
+option optimize_for = SPEED;
+
+import "google/protobuf/timestamp.proto";
+
+enum PlayerJournalEvent {
+  UNSPECIFIED = 0;
+
+  HEADING = 1;
+
+  CARGO  = 10;
+}
+
+message HeadingEventData {
+  uint32 part = 3;
+  string language = 4;
+  string game_version = 5;
+  string build = 6;
+}
+
+message CargoEventData {
+  enum Vessel {
+    UNSPECIFIED = 0;
+    SHIP = 1;
+    SRV = 2;
+  }
+  message Inventory {
+    string name = 1;
+    string name_localised = 2;
+    uint32 count = 3;
+    uint32 stolen = 4;
+    uint64 mission_id = 5;
+  }
+  Vessel vessel = 1;
+  repeated Inventory inventory = 2;
+}
+
+message ClearSavedGameEventData {}
+
+message PlayerJournalEventRecord {
+  google.protobuf.Timestamp timestamp = 1;
+  PlayerJournalEvent event = 2;
+  oneof data {
+    CargoEventData cargo = 10;
+    ClearSavedGameEventData clear_saved_game = 11;
+  }
+}
+
+message PlayerJournalReadRequest {
+  PlayerJournalEventRecord lastEventRecord = 1;
+}
+
+service PlayerJournal {
+  rpc Read (PlayerJournalReadRequest) returns (stream PlayerJournalEventRecord) {}
+}
