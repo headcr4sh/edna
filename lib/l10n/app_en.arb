@@ -1,0 +1,11 @@
+{
+    "@@locale": "en",
+    "@@context": "edna",
+    "@@author": "Benjamin P. Jung <headcr4sh@gmail.com>",
+
+    "appName": "Elite Dangerous Navigation Assistant",
+
+    "appModeServerTitle": "Server",
+    "appModeClientTitle": "Client",
+    "appModeDummyTitle": "Dummy (non-functional)"
+}
