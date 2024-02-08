@@ -1,0 +1,8 @@
+- filename: icons/**/ed_logo_clean.png
+  source: https://elite-dangerous.fandom.com/wiki/Elite_logo?file=Elite_Dangerous_Logo_Clean_Vector_Big.png
+  author: "Univero" (https://elite-dangerous.fandom.com/wiki/User:Univero)
+  licence: cc-by-sa
+- filename: icons/**/ed_logo_official.png
+  source: https://merch.elitedangerous.com/build/images/logos/elite-dangerous.svg
+  author: Frontier Developments
+  license: unknown

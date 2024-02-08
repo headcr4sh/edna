@@ -1,0 +1,57 @@
+name: edna
+description: Elite Dangerous Navigation Assistant.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  args: ^2.4.2
+  async: ^2.11.0
+  cupertino_icons: ^1.0.6
+  drawing_animation: ^1.0.0
+  ffi: ^2.1.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_speed_dial: ^7.0.0
+  flutter_web_plugins:
+    sdk: flutter
+  http: ^1.2.2
+  intl: any
+  json_annotation: ^4.8.1
+  logger: ^2.1.0
+  nsd: ^3.0.0
+  path: ^1.8.3
+  provider: ^6.1.2
+  settings_ui: ^2.0.2
+  sqflite: ^2.3.3
+  sqflite_common_ffi: ^2.3.3
+  shared_preferences: ^2.2.2
+  webview_flutter: ^4.9.0
+  win32: ^5.2.0
+
+dev_dependencies:
+  build_runner: ^2.4.8
+  file: ^7.0.0
+  flutter_test:
+    sdk: flutter
+  json_serializable: ^6.7.1
+  lints: ^3.0.0
+  test: any
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+  - assets/icons/
+  - assets/icons/1.5x/
+  - assets/icons/2.0x/
+  - assets/icons/3.0x/
+  - assets/icons/4.0x/
+  - assets/loading_spinner.svg
+  - assets/loading_spinner2.svg
