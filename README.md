@@ -2,9 +2,9 @@
 
 The "Elite Dangerous Navigation Assistant".
 
-## Getting Started
+E.D.N.A. is a cross-platform (Linux, Windows, macOS, Android, iOS, Web) application that helps you navigate the galaxy in Elite Dangerous.
 
-This project is work-in-progress and implemented as a Flutter application.
+It is built with Flutter and uses the Elite Dangerous Player Journal to gather information and displays them in to the pilot. It is necessary, that one instance of E.D.N.A. is launched on the device where Elite Dangerous is being played. Other instances may be launched on the same network and can connect to the main instance to provide the same functionality.
 
 ## Links
 

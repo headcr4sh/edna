@@ -1,9 +1,10 @@
 import 'dart:io' show Platform;
 
 import 'package:flutter/material.dart' show BuildContext;
-import 'package:flutter_gen/gen_l10n/app_localizations.dart' show AppLocalizations;
+import 'package:edna/l10n/app_localizations.dart' show AppLocalizations;
 
-bool _currentPlatformIsDesktop() => Platform.isWindows || Platform.isLinux || Platform.isMacOS;
+bool _currentPlatformIsDesktop() =>
+    Platform.isWindows || Platform.isLinux || Platform.isMacOS;
 
 /// Mode of a currently running E.D.N.A. instance.
 /// There must be exactly *one* server-mode instance to which multiple
@@ -23,9 +24,12 @@ enum EdnaAppMode {
 
   /// Default mode to run in if nothing else has been specified. If the current platform is
   /// a desktop platform, the default is server mode. Otherwise, it's client mode.
-  static EdnaAppMode defaultForCurrentPlatform() => _currentPlatformIsDesktop() ? EdnaAppMode.server : EdnaAppMode.client;
+  static EdnaAppMode defaultForCurrentPlatform() =>
+      _currentPlatformIsDesktop() ? EdnaAppMode.server : EdnaAppMode.client;
 
-  static EdnaAppMode fromString(final String? mode) => EdnaAppMode.values.asNameMap()[mode] ?? EdnaAppMode.defaultForCurrentPlatform();
+  static EdnaAppMode fromString(final String? mode) =>
+      EdnaAppMode.values.asNameMap()[mode] ??
+      EdnaAppMode.defaultForCurrentPlatform();
 
   String displayName(final BuildContext context) {
     var l10n = AppLocalizations.of(context)!;

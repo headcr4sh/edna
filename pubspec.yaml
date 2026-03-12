@@ -25,7 +25,7 @@ dependencies:
   intl: any
   json_annotation: ^4.8.1
   logger: ^2.1.0
-  nsd: ^3.0.0
+  nsd: ^4.1.0
   path: ^1.8.3
   provider: ^6.1.2
   settings_ui: ^2.0.2
@@ -33,7 +33,7 @@ dependencies:
   sqflite_common_ffi: ^2.3.3
   shared_preferences: ^2.2.2
   webview_flutter: ^4.9.0
-  win32: ^5.2.0
+  win32: ^6.0.0
 
 dev_dependencies:
   build_runner: ^2.4.8
@@ -41,7 +41,7 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   json_serializable: ^6.7.1
-  lints: ^3.0.0
+  lints: ^6.1.0
   test: any
 
 flutter:
