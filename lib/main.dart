@@ -6,6 +6,7 @@ import './init_nonweb.dart' if (dart.library.html) 'init_web.dart' show configur
 import './app.dart' show EdnaApp;
 
 void main(final List<String> args) {
+  WidgetsFlutterBinding.ensureInitialized();
   dev.log('Performing platform-specific pre-launch configuration', name: 'main');
   configureApp();
   dev.log('Starting E.D.N.A. app', name: 'main');

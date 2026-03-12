@@ -1,3 +1,1 @@
-library edna.network;
-
-export './zeroconf.dart';
+export './mdns_manager.dart';

@@ -33,6 +33,54 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.13.0"
+  bonsoir:
+    dependency: "direct main"
+    description:
+      name: bonsoir
+      sha256: "42f2c1eb55e833bcb541dfcb759851da0a703106646a0cf15a16c6de21f4a5a4"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.2"
+  bonsoir_android:
+    dependency: transitive
+    description:
+      name: bonsoir_android
+      sha256: e19728f94a0d9813abf9e2edf644fede008e58ef539865a1be86ac5d8994154e
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.1"
+  bonsoir_darwin:
+    dependency: transitive
+    description:
+      name: bonsoir_darwin
+      sha256: e242a03a019fd474be657715826cfc13e43d02c88e46ec5611a20b9d4f72854d
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.1"
+  bonsoir_linux:
+    dependency: "direct main"
+    description:
+      name: bonsoir_linux
+      sha256: "9c326c572c241c6a38ab7a8a5dba27c82917ec12504f84308ce3b5706619e8d3"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.2"
+  bonsoir_platform_interface:
+    dependency: transitive
+    description:
+      name: bonsoir_platform_interface
+      sha256: "3fa0c46b30eb2a2f48be6fa53591a5c0425bf00520be761b61763e58b51814ff"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.1"
+  bonsoir_windows:
+    dependency: transitive
+    description:
+      name: bonsoir_windows
+      sha256: "34c54802baaa2f00e3c4ab7ea46888f2a829876753778e2f40e3f273c3382d34"
+      url: "https://pub.dev"
+    source: hosted
+    version: "6.0.1"
   boolean_selector:
     dependency: transitive
     description:
@@ -185,14 +233,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.7"
-  drawing_animation:
-    dependency: "direct main"
+  dbus:
+    dependency: transitive
     description:
-      name: drawing_animation
-      sha256: "7ae39374925e420136d3f5ec8de1e55b865a09f23479e1127df7321061a05bfe"
+      name: dbus
+      sha256: d0c98dcd4f5169878b6cf8f6e0a52403a9dff371a3e2f019697accbf6f44a270
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.1"
+    version: "0.7.12"
   fake_async:
     dependency: transitive
     description:
@@ -453,54 +501,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.2"
-  nsd:
-    dependency: "direct main"
-    description:
-      name: nsd
-      sha256: "1611a5c9f61d56ff2973e1488ae04112103e5203b4a7a1fb594b48cfb366fc14"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.1.0"
-  nsd_android:
-    dependency: transitive
-    description:
-      name: nsd_android
-      sha256: "96d2d451c5db0319c37b1b2a38f2d55eb56ae54c0b0d3144c03c19c97436de4a"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.2.0"
-  nsd_ios:
-    dependency: transitive
-    description:
-      name: nsd_ios
-      sha256: "562fffe753543a65190344d3acd0ed80d96c571ac1a05bf10780c5584b5055ac"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.1"
-  nsd_macos:
-    dependency: transitive
-    description:
-      name: nsd_macos
-      sha256: "47cd355d84009befe02710c72bf1c1999b24d5f3fb3a3d914f8b77bcaca42542"
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.0.1"
-  nsd_platform_interface:
-    dependency: transitive
-    description:
-      name: nsd_platform_interface
-      sha256: b1a5ace6f01ea2ce37f373e52c3b7af4fd7c11de2582ddcc89f4fc00615d9dff
-      url: "https://pub.dev"
-    source: hosted
-    version: "2.2.0"
-  nsd_windows:
-    dependency: transitive
-    description:
-      name: nsd_windows
-      sha256: "68b4a256b0be258dbbad0ae789f2e8838d0935a353dac86b17c14c1a05df4ecd"
-      url: "https://pub.dev"
-    source: hosted
-    version: "3.0.1"
   package_config:
     dependency: transitive
     description:
@@ -517,14 +517,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.9.1"
-  path_parsing:
-    dependency: transitive
-    description:
-      name: path_parsing
-      sha256: "883402936929eac138ee0a45da5b0f2c80f89913e6dc3bf77eb65b84b409c6ca"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.1.0"
   path_provider_linux:
     dependency: transitive
     description:
@@ -553,10 +545,10 @@ packages:
     dependency: transitive
     description:
       name: petitparser
-      sha256: cb3798bef7fc021ac45b308f4b51208a152792445cce0448c9a4ba5879dd8750
+      sha256: "91bd59303e9f769f108f8df05e371341b15d59e995e6806aefab827b58336675"
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.0"
+    version: "7.0.2"
   platform:
     dependency: transitive
     description:
@@ -882,14 +874,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.4.0"
-  uuid:
-    dependency: transitive
-    description:
-      name: uuid
-      sha256: "1fef9e8e11e2991bb773070d4656b7bd5d850967a2456cfc83cf47925ba79489"
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.5.3"
   vector_math:
     dependency: transitive
     description:
@@ -998,10 +982,10 @@ packages:
     dependency: transitive
     description:
       name: xml
-      sha256: "80d494c09849dc3f899d227a78c30c5b949b985ededf884cb3f3bcd39f4b447a"
+      sha256: "971043b3a0d3da28727e40ed3e0b5d18b742fa5a68665cca88e74b7876d5e025"
       url: "https://pub.dev"
     source: hosted
-    version: "5.4.1"
+    version: "6.6.1"
   yaml:
     dependency: transitive
     description:

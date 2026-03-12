@@ -1,11 +1,4 @@
-import 'package:edna/app_settings.dart';
-import 'package:edna/player_journal/player_journal.dart';
 import 'package:flutter/material.dart';
-
-import 'package:edna/l10n/app_localizations.dart' show AppLocalizations;
-
-import '../ed_server_status/ed_server_status.dart'
-    show ServerStatus, ServerStatusLabel;
 
 class AboutPage extends StatefulWidget {
   const AboutPage({super.key});
@@ -15,15 +8,11 @@ class AboutPage extends StatefulWidget {
 }
 
 class AboutPageState extends State<AboutPage> {
-  final _settings = EdnaAppSettings();
-  final _playerJournal = PlayerJournal();
-  final _serverStatus = ServerStatus()..refresh();
-
   @override
   Widget build(final BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('About E.D.N.A.'),
+        title: const Text('About E.D.N.A.'),
         centerTitle: true,
       ),
       body: ListView(
@@ -45,7 +34,7 @@ class AboutPageState extends State<AboutPage> {
                 color: Colors.deepOrange,
                 width: 2.0,
               ),
-              image: DecorationImage(
+              image: const DecorationImage(
                 image: AssetImage("assets/icons/ed_logo_clean.png"),
                 fit: BoxFit.scaleDown,
               ),

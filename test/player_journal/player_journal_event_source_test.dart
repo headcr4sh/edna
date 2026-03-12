@@ -9,8 +9,8 @@ void main() {
     test('.journalFilePattern() recognizes valid Journal file names', () {
       final regexMatch = journalFilePattern.firstMatch('Journal.210323223612.01.log');
       expect(regexMatch != null, true);
-      expect(regexMatch!.namedGroup('serial01'), '210323223612');
-      expect(regexMatch.namedGroup('serial02'), '01');
+      expect(regexMatch!.namedGroup('datestamp'), '210323223612');
+      expect(regexMatch.namedGroup('part'), '01');
     });
     test('.journalFilePattern() ignores invalid Journal file names', () {
       final regexMatch = journalFilePattern.firstMatch('NotAJournal.210323223612.01.log');

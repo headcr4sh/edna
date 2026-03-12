@@ -1,5 +1,3 @@
-library edna.ed_server_status;
-
 export './status_label.dart';
 
 import 'dart:convert' show jsonDecode;
@@ -9,7 +7,7 @@ import 'package:http/http.dart' as http;
 
 const url = 'https://ed-server-status.orerve.net/';
 
-class ServerStatus with ChangeNotifier{
+class ServerStatus with ChangeNotifier {
   String? _status;
   String? _message;
   int? _code;

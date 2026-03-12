@@ -12,7 +12,6 @@ dependencies:
   args: ^2.4.2
   async: ^2.11.0
   cupertino_icons: ^1.0.6
-  drawing_animation: ^1.0.0
   ffi: ^2.1.0
   flutter:
     sdk: flutter
@@ -25,7 +24,6 @@ dependencies:
   intl: any
   json_annotation: ^4.8.1
   logger: ^2.1.0
-  nsd: ^4.1.0
   path: ^1.8.3
   provider: ^6.1.2
   settings_ui: ^2.0.2
@@ -34,6 +32,8 @@ dependencies:
   shared_preferences: ^2.2.2
   webview_flutter: ^4.9.0
   win32: ^6.0.0
+  bonsoir: ^6.0.2
+  bonsoir_linux: ^6.0.2
 
 dev_dependencies:
   build_runner: ^2.4.8
@@ -55,3 +55,4 @@ flutter:
   - assets/icons/4.0x/
   - assets/loading_spinner.svg
   - assets/loading_spinner2.svg
+  - assets/dummy/

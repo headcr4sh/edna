@@ -56,9 +56,6 @@ int _calculatePos(final File file, {final String? bytes, String? lines}) {
       break;
     case _PositionMode.lines:
       throw ArgumentError('Not yet implemented.');
-    default:
-      throw UnimplementedError(
-          'posMode "${posMode.toString()}" not supported.');
   }
   return pos;
 }

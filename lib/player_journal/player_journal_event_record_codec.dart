@@ -1,6 +1,6 @@
 import 'dart:convert' show Codec, Converter, StringConversionSinkBase;
 
-import './player_journal_event_record.dart' show PlayerJournalEventRecord;
+import './event_record/player_journal_event_record.dart' show PlayerJournalEventRecord;
 
 class PlayerJournalEventRecordCodec extends Codec<PlayerJournalEventRecord, String> {
   @override

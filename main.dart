@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-import 'dart:developer' as dev;
 
 import 'package:edna/player_journal/file_tailer.dart';
 import 'package:edna/player_journal/journal_log_file.dart';
@@ -8,7 +7,11 @@ import 'package:edna/player_journal/player_journal.dart';
 
 void main() async {
   final ctrl = StreamController<PlayerJournalEventRecord>();
-  final journalLogFile = await currentJournalLogFile(playerJournalPath: PlayerJournal.localJournalPath());
+  final path = PlayerJournal.localJournalPath();
+  if (path == null) {
+      throw Exception('No Journal path found.');
+  }
+  final journalLogFile = await currentJournalLogFile(playerJournalPath: path);
   if (journalLogFile == null) {
     throw Exception('No Journal log file found.');
   }

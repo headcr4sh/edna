@@ -1,6 +1,6 @@
-import './network/network.dart' show ZeroconfManager;
+import './network/network.dart' show MdnsManager;
 
 /// Initialization routines if *not* running in a browser
 void configureApp() {
-  // TODO initialize ZeroConf manager
+  MdnsManager.initialize();
 }

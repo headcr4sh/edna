@@ -45,10 +45,10 @@ enum HudMode {
 
 /// See: https://elite-journal.readthedocs.io/en/latest/Status%20File/
 class Status with ChangeNotifier {
-  DateTime _timestamp;
-  String _event;
-  int _flags;
-  int _guiFocus;
+  final DateTime _timestamp;
+  // final String _event;
+  final int _flags;
+  final int _guiFocus;
 
   bool get online => DateTime.now().difference(_timestamp).inSeconds < 60;
   bool get offline => !online;
@@ -73,7 +73,6 @@ class Status with ChangeNotifier {
     required int flags,
     int guiFocus = 0,
   })  : _timestamp = timestamp,
-        _event = event,
         _flags = flags,
         _guiFocus = guiFocus;
 

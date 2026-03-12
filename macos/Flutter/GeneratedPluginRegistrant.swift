@@ -5,13 +5,13 @@
 import FlutterMacOS
 import Foundation
 
-import nsd_macos
+import bonsoir_darwin
 import shared_preferences_foundation
 import sqflite_darwin
 import webview_flutter_wkwebview
 
 func RegisterGeneratedPlugins(registry: FlutterPluginRegistry) {
-  NsdMacosPlugin.register(with: registry.registrar(forPlugin: "NsdMacosPlugin"))
+  SwiftBonsoirPlugin.register(with: registry.registrar(forPlugin: "SwiftBonsoirPlugin"))
   SharedPreferencesPlugin.register(with: registry.registrar(forPlugin: "SharedPreferencesPlugin"))
   SqflitePlugin.register(with: registry.registrar(forPlugin: "SqflitePlugin"))
   WebViewFlutterPlugin.register(with: registry.registrar(forPlugin: "WebViewFlutterPlugin"))
